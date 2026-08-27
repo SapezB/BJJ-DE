@@ -1,0 +1,21 @@
+[project]
+name = "data-ingestion"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Ben", email = "65823405+SapezB@users.noreply.github.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "bs4>=0.0.2",
+    "requests>=2.34.2",
+    "selenium>=4.47.0",
+]
+
+[project.scripts]
+data-ingestion = "data_ingestion:main"
+
+[build-system]
+requires = ["uv_build>=0.12.6,<0.13.0"]
+build-backend = "uv_build"

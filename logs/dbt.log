@@ -1,0 +1,46 @@
+==================== 2026-08-26T20:39:31.603124Z | 01a03fcc-a606-7ea0-aa05-d39842f863ae ====================
+20:39:31.606658 [info ]: Installing dbt project and profile setup
+20:39:31.616058 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+20:39:31.617849 [info ]: Success Project created successfully!
+20:39:31.618071 [info ]: Info Project name: jaffle_shop
+20:39:31.618093 [info ]: Info Project directory: jaffle_shop
+20:39:31.618519 [info ]: Info Setting up your profile...
+20:39:31.620775 [info ]: Info Creating new profile...
+20:41:40.435648 [info ]: Success Profile written to /Users/bensapezinskas/.dbt/profiles.yml
+20:41:40.443485 [info ]: Validating profile inputs, adapters, and connection
+
+20:41:40.445363 [info ]: dbt-fusion 2.0.0-preview.212
+20:41:40.450299 [info ]: Started loading project
+20:41:40.478461 [info ]: Loading ~/.dbt/profiles.yml
+20:41:40.490035 [info ]: Finished loading project [  0.04s]
+20:41:40.493288 [info ]: Started debugging
+20:41:40.493644 [info ]: Debugging profile: dev
+20:41:40.493673 [info ]: Debugging dbt version: 2.0.0-preview.212
+20:41:40.493835 [info ]: Debugging platform: macos aarch64 (unix)
+20:41:40.494319 [info ]: Debugging adapter type: snowflake (remote)
+20:41:40.523358 [info ]: Debugging dependencies:
+  git: OK
+20:41:40.525338 [info ]: Debugging connection:
+  "account": "NXRZXZL-YP42330",
+  "user": "UNCOBUGS",
+  "database": "BJJ_DB",
+  "warehouse": "BJJ_WH",
+  "schema": "FIGHTERS"
+20:41:40.531465 [debug]: Snowflake driver resolved: snowflake 0.21.0.dev+dbt0.21.16
+20:41:44.042069 [debug]: borrow_tlocal_connection() took 3.513391666s
+20:41:44.047837 [debug]: create_debug_span(...).entered() took 368.083µs
+20:41:44.116460 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 67.9555ms
+20:41:44.116508 [debug]: reader.schema() took 125ns
+20:41:44.119582 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 71.705375ms
+20:41:44.121649 [debug]: concat_batches + normalize_result_column_names took 2.040084ms
+20:41:44.122350 [debug]: record_current_span_status_from_attrs took 681.291µs
+20:41:44.122745 [debug]: Query executed on node unknown:
+select 1 as id
+20:41:44.123142 [debug]: drop(query_span_guard) (span exit/export) took 740.459µs
+20:41:44.126361 [debug]: adapter.execute() (full call, incl. adbc_execute_with_options) took 84.240083ms
+20:41:44.126827 [info ]: Debugging connection test: OK (3.6s)
+20:41:44.127606 [info ]: Debugged All checks passed!
+20:41:44.127888 [info ]: Finished debugging [  3.63s]
+20:41:44.666684 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' successfully for target 'dev' [2m 13s]
