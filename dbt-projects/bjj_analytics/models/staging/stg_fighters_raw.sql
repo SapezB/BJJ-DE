@@ -1,0 +1,1 @@
+select * from {{source('fighters_raw', 'fighters')}}
