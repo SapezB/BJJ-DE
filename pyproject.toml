@@ -1,0 +1,19 @@
+[project]
+name = "dbt-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Ben", email = "65823405+SapezB@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "dbt>=1.0.0.40.21",
+]
+
+[project.scripts]
+dbt-project = "dbt_project:main"
+
+[build-system]
+requires = ["uv_build>=0.12.6,<0.13.0"]
+build-backend = "uv_build"
